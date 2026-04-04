@@ -7,19 +7,30 @@ color:#111;
 
 header{
 background:#0f3d2e;
-padding:15px;
+padding:15px 40px;
 display:flex;
-justify-content:center;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+color:white;
+font-size:22px;
+font-weight:bold;
+}
+
+nav{
+display:flex;
 gap:40px;
 font-weight:bold;
 }
 
-header a{
+nav a{
 color:white;
 text-decoration:none;
 }
 
-header a:hover{
+nav a:hover{
 color:#90ee90;
 }
 
