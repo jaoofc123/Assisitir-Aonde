@@ -53,13 +53,19 @@ data.innerText = partes[2]+"/"+partes[1]+"/"+partes[0]
 
 })
 
-// ATUALIZAR TITULO "JOGOS DE HOJE"
 let titulo = document.getElementById("titulo-hoje")
 
 if(titulo){
 
+let hoje = new Date()
+
+let dia = String(hoje.getDate()).padStart(2,'0')
+let mes = String(hoje.getMonth()+1).padStart(2,'0')
+let ano = hoje.getFullYear()
+
 titulo.innerText = "Jogos de Hoje ("+dia+"/"+mes+"/"+ano+")"
 
 }
+
 
 })
